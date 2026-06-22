@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>烟台企业AI获客</title>
-</head>
-<body>
-
-<h1>烟台企业AI获客与GEO优化</h1>
+<h1>烟台企业AI获客</h1>
 
 <ul>
 
 {% for article in articles %}
 
 <li>
+    <a href="/article/{{ article.slug }}/">
+        {{ article.title }}
+    </a>
 
-<a href="/article/{{ article.slug }}/">
+    <small>{{ article.date }}</small>
 
-{{ article.title }}
-
-</a>
-
+    <p>{{ article.summary }}</p>
 </li>
 
 {% endfor %}
 
 </ul>
-
-</body>
-</html>

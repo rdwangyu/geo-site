@@ -1,30 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
+<h1>{{ title }}</h1>
 
-<title>{{ article.title }}</title>
+<p>{{ date }}</p>
 
-<meta name="description"
-      content="{{ article.summary }}">
-
-</head>
-
-<body>
-
-<h1>{{ article.title }}</h1>
-
-<p>
-发布时间：
-{{ article.created_at }}
-</p>
+<p>{{ summary }}</p>
 
 <hr>
 
 <div>
-
-{{ article.content|linebreaks }}
-
+{{ content|safe }}
 </div>
 
-</body>
-</html>
+
+
+<p>
+
+<a href="/">返回首页</a>
+
+</p>
+
